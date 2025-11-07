@@ -1,0 +1,12 @@
+python run.py --gene_map D:/paper/newmodel/data/NanoString_CosMx_Human_Pancreas/fov51/top500/top500_gene_map.tif \
+--nuclei_mask  D:/paper/newmodel/data/NanoString_CosMx_Human_Pancreas/fov51/cellpose_masks_fov51.tif \
+--log_dir D:/paper/newmodel/log/top_vs_hvg/newmodel_NanoString_CosMx_Human_Pancreas_fov51_top500 \
+--patch_size 96 \
+--dilation_kernel_size 15 \
+--dilation_iter_num 5 \
+--tau 5 \
+--fg_net_epoch 1 \
+--fg_net_batch_size 32 \
+--fg_net_nuclei_weight 1.5 \
+--cell_net_epoch 1 \
+--cell_net_nuclei_weight 1 

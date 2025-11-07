@@ -1,0 +1,13 @@
+h5py==3.2.1
+imgaug==0.4.0
+matplotlib==3.7.2
+natsort==8.4.0
+numpy==1.24.4
+opencv_python==4.8.0.74
+opencv_python_headless==4.11.0.86
+pandas==2.3.3
+scipy==1.9.0
+Shapely==2.1.2
+tifffile==2024.8.30
+torch==2.0.1+cu118
+tqdm==4.62.3
