@@ -42,24 +42,25 @@ We provide a demo dataset (Stereo-seq Mouse Brain) to help you get started quick
 
 ### Run the Demo
 
-1. **Preprocess the data** (**Run demo_data.ipynb**):
-   - The `demo_data/` folder contains preprocessed files
-   - See `demo_data.ipynb` for the complete preprocessing pipeline
-   - This notebook generates:
-     - `demo_data/top500/top500_gene_map.tif` - Gene expression map
-     - `demo_data/segmentation/nuclei_masks.tif` - Nuclear segmentation
+1. **End-to-End Demo** (**Run tutorial/demo_data.ipynb**):
+   - The `demo_data/` folder contains downsampled raw transcript files.
+   - We highly recommend exploring `tutorial/demo_data.ipynb`. This notebook provides a comprehensive end-to-end walkthrough that covers:
+     - Data exploration and generating multi-channel gene expression maps.
+     - Nuclear segmentation via Cellpose.
+     - **Cell segmentation via SpaCut** leveraging morphological and transcriptomic features.
+     - Final visualizations directly comparing Nuclear Masks vs. SpaCut Cell Masks side-by-side.
 
-2. **Run SpaCut on demo data**:
+2. **Command Line Alternative (for running SpaCut only)**:
+   If you prefer running SpaCut iteratively or directly from the terminal (assuming preprocessing is finished):
 
 ```bash
 bash scripts/demo_stereo_seq.sh
 ```
 
-
  **Check results**:
 
    - Segmentation results will be saved in `demo_data/spacut_results/`
-   - The main output is `segmentation_mask.tif`
+   - The final cellular segmentation output is `segmentation_mask.tif`
 
 ## Prepare Your Own Data
 
@@ -72,12 +73,14 @@ SpaCut requires two inputs:
 
 #### For Stereo-seq Data:
 
-See `demo_data.ipynb` for a complete example that demonstrates:
+See `tutorial/demo_data.ipynb` for a complete example that demonstrates:
 
 - Loading and exploring transcript data
 - Selecting top 500 highly expressed genes
 - Generating multi-channel gene expression maps
 - Performing nuclear segmentation with Cellpose
+- Running SpaCut to expand nuclei predictions to cellular boundaries
+- Visual comparison of standard vs transcript-aware segmentations
 
 #### For Xenium Data:
 
