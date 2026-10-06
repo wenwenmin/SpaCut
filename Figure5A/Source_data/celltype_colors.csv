@@ -1,0 +1,18 @@
+cell_type,color_hex
+B Cells,#a6cee3
+CD4+ T Cells,#1f78b4
+CD8+ T Cells,#b2df8a
+DCIS 1,#33a02c
+DCIS 2,#fb9a99
+Endothelial,#e31a1c
+IRF7+ DCs,#fdbf6f
+Invasive Tumor,#ff7f00
+LAMP3+ DCs,#cab2d6
+Macrophages 1,#6a3d9a
+Macrophages 2,#bc80bd
+Mast Cells,#b15928
+Myoepi ACTA2+,#1b9e77
+Myoepi KRT15+,#7570b3
+Perivascular-Like,#e78ac3
+Prolif Invasive Tumor,#1c9099
+Stromal,#ffed6f
